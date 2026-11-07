@@ -1,9 +1,10 @@
 median_impr=60.0 ctr=0.05 q*=0.635 matched bad catch=78.0%
-  daily_no_guard                   false pauses=98.8% of ok keywords (88.3% of ok spend)  bad caught=99.8% (100.0% of bad spend)  blocked vs no guard: count 0%, spend 0%
-  daily_guard500                   false pauses=7.6% of ok keywords (42.7% of ok spend)  bad caught=9.0% (55.0% of bad spend)  blocked vs no guard: count 92%, spend 52%
-  daily_guard500_zero_never_fires  false pauses=7.5% of ok keywords (42.3% of ok spend)  bad caught=8.8% (54.5% of bad spend)  blocked vs no guard: count 92%, spend 52%
-  lookback30_guard500              false pauses=31.9% of ok keywords (30.0% of ok spend)  bad caught=78.7% (98.8% of bad spend)  blocked vs no guard: count 68%, spend 66%
-  posterior                        false pauses=21.4% of ok keywords (17.8% of ok spend)  bad caught=79.2% (98.4% of bad spend)  blocked vs no guard: count 78%, spend 80%
+  daily_no_guard                   false pauses=98.8% of ok keywords (88.3% of ok spend)  bad caught=99.8% (100.0% of bad spend)
+  daily_guard500                   false pauses=7.6% of ok keywords (42.7% of ok spend)  bad caught=9.0% (55.0% of bad spend)  guard blocks vs its unguarded twin: count 92%, spend 52%
+  daily_no_guard_zero_never_fires  false pauses=13.2% of ok keywords (53.9% of ok spend)  bad caught=14.8% (66.4% of bad spend)
+  daily_guard500_zero_never_fires  false pauses=7.5% of ok keywords (42.3% of ok spend)  bad caught=8.8% (54.5% of bad spend)  guard blocks vs its unguarded twin: count 44%, spend 21%
+  lookback30_guard500              false pauses=31.9% of ok keywords (30.0% of ok spend)  bad caught=78.7% (98.8% of bad spend)
+  posterior                        false pauses=21.4% of ok keywords (17.8% of ok spend)  bad caught=79.2% (98.4% of bad spend)
   posterior frontier (q: false pause share of good, bad caught):
     q=0.60  good paused=29.6% (spend 21.9%)  bad caught=83.9% (spend 98.9%)
     q=0.70  good paused=11.4% (spend 10.9%)  bad caught=71.1% (spend 97.3%)
@@ -13,27 +14,28 @@ median_impr=60.0 ctr=0.05 q*=0.635 matched bad catch=78.0%
     q=0.98  good paused=0.0% (spend 0.0%)  bad caught=27.3% (spend 79.0%)
     q=0.99  good paused=0.0% (spend 0.0%)  bad caught=23.5% (spend 75.5%)
   single keyword, P(paused within 7 days):
-    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.18
-    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.23
-    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.36
-    impr/day=  200 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.58  posterior=0.37
-    impr/day=  200 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.74  posterior=0.53
-    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.95  posterior=0.85
-    impr/day=  500 r=0.8  daily=0.99  daily+500=0.85  daily+500(z)=0.65  30d+500=0.60  posterior=0.40
-    impr/day=  500 r=1.0  daily=1.00  daily+500=0.91  daily+500(z)=0.68  30d+500=0.79  posterior=0.59
-    impr/day=  500 r=2.0  daily=1.00  daily+500=0.98  daily+500(z)=0.68  30d+500=0.99  posterior=0.97
-    impr/day= 1000 r=0.8  daily=0.97  daily+500=0.97  daily+500(z)=0.94  30d+500=0.57  posterior=0.35
-    impr/day= 1000 r=1.0  daily=1.00  daily+500=1.00  daily+500(z)=0.99  30d+500=0.81  posterior=0.62
-    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=0.99
-    impr/day= 3000 r=0.8  daily=0.90  daily+500=0.90  daily+500(z)=0.90  30d+500=0.39  posterior=0.22
-    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily+500(z)=0.99  30d+500=0.79  posterior=0.65
-    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
+    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.18
+    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.23
+    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.36
+    impr/day=  200 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.58  posterior=0.37
+    impr/day=  200 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.74  posterior=0.53
+    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.95  posterior=0.85
+    impr/day=  500 r=0.8  daily=0.99  daily+500=0.85  daily(z)=0.87  daily+500(z)=0.65  30d+500=0.60  posterior=0.40
+    impr/day=  500 r=1.0  daily=1.00  daily+500=0.91  daily(z)=0.91  daily+500(z)=0.68  30d+500=0.79  posterior=0.59
+    impr/day=  500 r=2.0  daily=1.00  daily+500=0.98  daily(z)=0.90  daily+500(z)=0.68  30d+500=0.99  posterior=0.97
+    impr/day= 1000 r=0.8  daily=0.97  daily+500=0.97  daily(z)=0.94  daily+500(z)=0.94  30d+500=0.57  posterior=0.35
+    impr/day= 1000 r=1.0  daily=1.00  daily+500=1.00  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.81  posterior=0.62
+    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=0.99
+    impr/day= 3000 r=0.8  daily=0.90  daily+500=0.90  daily(z)=0.90  daily+500(z)=0.90  30d+500=0.39  posterior=0.22
+    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.79  posterior=0.65
+    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
 median_impr=20.0 ctr=0.05 q*=0.645 matched bad catch=52.8%
-  daily_no_guard                   false pauses=98.1% of ok keywords (97.1% of ok spend)  bad caught=98.5% (100.0% of bad spend)  blocked vs no guard: count 0%, spend 0%
-  daily_guard500                   false pauses=1.6% of ok keywords (23.3% of ok spend)  bad caught=1.8% (25.8% of bad spend)  blocked vs no guard: count 98%, spend 76%
-  daily_guard500_zero_never_fires  false pauses=1.5% of ok keywords (23.0% of ok spend)  bad caught=1.7% (24.8% of bad spend)  blocked vs no guard: count 98%, spend 76%
-  lookback30_guard500              false pauses=21.9% of ok keywords (34.0% of ok spend)  bad caught=53.3% (93.9% of bad spend)  blocked vs no guard: count 78%, spend 65%
-  posterior                        false pauses=14.9% of ok keywords (20.4% of ok spend)  bad caught=54.7% (92.9% of bad spend)  blocked vs no guard: count 85%, spend 79%
+  daily_no_guard                   false pauses=98.1% of ok keywords (97.1% of ok spend)  bad caught=98.5% (100.0% of bad spend)
+  daily_guard500                   false pauses=1.6% of ok keywords (23.3% of ok spend)  bad caught=1.8% (25.8% of bad spend)  guard blocks vs its unguarded twin: count 98%, spend 76%
+  daily_no_guard_zero_never_fires  false pauses=3.4% of ok keywords (34.0% of ok spend)  bad caught=3.7% (36.6% of bad spend)
+  daily_guard500_zero_never_fires  false pauses=1.5% of ok keywords (23.0% of ok spend)  bad caught=1.7% (24.8% of bad spend)  guard blocks vs its unguarded twin: count 55%, spend 32%
+  lookback30_guard500              false pauses=21.9% of ok keywords (34.0% of ok spend)  bad caught=53.3% (93.9% of bad spend)
+  posterior                        false pauses=14.9% of ok keywords (20.4% of ok spend)  bad caught=54.7% (92.9% of bad spend)
   posterior frontier (q: false pause share of good, bad caught):
     q=0.60  good paused=23.7% (spend 26.8%)  bad caught=63.8% (spend 95.6%)
     q=0.70  good paused=7.8% (spend 12.4%)  bad caught=45.1% (spend 89.7%)
@@ -43,27 +45,28 @@ median_impr=20.0 ctr=0.05 q*=0.645 matched bad catch=52.8%
     q=0.98  good paused=0.0% (spend 0.1%)  bad caught=9.6% (spend 53.8%)
     q=0.99  good paused=0.0% (spend 0.1%)  bad caught=7.5% (spend 48.4%)
   single keyword, P(paused within 7 days):
-    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.14
-    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.19
-    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.30
-    impr/day=  200 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.58  posterior=0.35
-    impr/day=  200 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.74  posterior=0.51
-    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.95  posterior=0.83
-    impr/day=  500 r=0.8  daily=0.99  daily+500=0.85  daily+500(z)=0.65  30d+500=0.60  posterior=0.39
-    impr/day=  500 r=1.0  daily=1.00  daily+500=0.91  daily+500(z)=0.68  30d+500=0.79  posterior=0.58
-    impr/day=  500 r=2.0  daily=1.00  daily+500=0.98  daily+500(z)=0.68  30d+500=0.99  posterior=0.97
-    impr/day= 1000 r=0.8  daily=0.97  daily+500=0.97  daily+500(z)=0.94  30d+500=0.57  posterior=0.34
-    impr/day= 1000 r=1.0  daily=1.00  daily+500=1.00  daily+500(z)=0.99  30d+500=0.81  posterior=0.61
-    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=0.99
-    impr/day= 3000 r=0.8  daily=0.90  daily+500=0.90  daily+500(z)=0.90  30d+500=0.39  posterior=0.21
-    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily+500(z)=0.99  30d+500=0.79  posterior=0.63
-    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
+    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.14
+    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.19
+    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.30
+    impr/day=  200 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.58  posterior=0.35
+    impr/day=  200 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.74  posterior=0.51
+    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.95  posterior=0.83
+    impr/day=  500 r=0.8  daily=0.99  daily+500=0.85  daily(z)=0.87  daily+500(z)=0.65  30d+500=0.60  posterior=0.39
+    impr/day=  500 r=1.0  daily=1.00  daily+500=0.91  daily(z)=0.91  daily+500(z)=0.68  30d+500=0.79  posterior=0.58
+    impr/day=  500 r=2.0  daily=1.00  daily+500=0.98  daily(z)=0.90  daily+500(z)=0.68  30d+500=0.99  posterior=0.97
+    impr/day= 1000 r=0.8  daily=0.97  daily+500=0.97  daily(z)=0.94  daily+500(z)=0.94  30d+500=0.57  posterior=0.34
+    impr/day= 1000 r=1.0  daily=1.00  daily+500=1.00  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.81  posterior=0.61
+    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=0.99
+    impr/day= 3000 r=0.8  daily=0.90  daily+500=0.90  daily(z)=0.90  daily+500(z)=0.90  30d+500=0.39  posterior=0.21
+    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.79  posterior=0.63
+    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
 median_impr=200.0 ctr=0.05 q*=0.615 matched bad catch=94.0%
-  daily_no_guard                   false pauses=95.9% of ok keywords (71.3% of ok spend)  bad caught=100.0% (100.0% of bad spend)  blocked vs no guard: count 0%, spend 0%
-  daily_guard500                   false pauses=24.5% of ok keywords (53.4% of ok spend)  bad caught=29.4% (82.7% of bad spend)  blocked vs no guard: count 74%, spend 25%
-  daily_guard500_zero_never_fires  false pauses=24.1% of ok keywords (53.1% of ok spend)  bad caught=28.7% (82.2% of bad spend)  blocked vs no guard: count 75%, spend 26%
-  lookback30_guard500              false pauses=34.9% of ok keywords (20.0% of ok spend)  bad caught=94.3% (99.9% of bad spend)  blocked vs no guard: count 64%, spend 72%
-  posterior                        false pauses=25.1% of ok keywords (12.5% of ok spend)  bad caught=94.8% (99.8% of bad spend)  blocked vs no guard: count 74%, spend 82%
+  daily_no_guard                   false pauses=95.9% of ok keywords (71.3% of ok spend)  bad caught=100.0% (100.0% of bad spend)
+  daily_guard500                   false pauses=24.5% of ok keywords (53.4% of ok spend)  bad caught=29.4% (82.7% of bad spend)  guard blocks vs its unguarded twin: count 74%, spend 25%
+  daily_no_guard_zero_never_fires  false pauses=35.2% of ok keywords (59.9% of ok spend)  bad caught=39.8% (88.9% of bad spend)
+  daily_guard500_zero_never_fires  false pauses=24.1% of ok keywords (53.1% of ok spend)  bad caught=28.7% (82.2% of bad spend)  guard blocks vs its unguarded twin: count 32%, spend 11%
+  lookback30_guard500              false pauses=34.9% of ok keywords (20.0% of ok spend)  bad caught=94.3% (99.9% of bad spend)
+  posterior                        false pauses=25.1% of ok keywords (12.5% of ok spend)  bad caught=94.8% (99.8% of bad spend)
   posterior frontier (q: false pause share of good, bad caught):
     q=0.60  good paused=28.2% (spend 13.6%)  bad caught=95.5% (spend 99.9%)
     q=0.70  good paused=12.7% (spend 7.3%)  bad caught=90.0% (spend 99.6%)
@@ -73,27 +76,28 @@ median_impr=200.0 ctr=0.05 q*=0.615 matched bad catch=94.0%
     q=0.98  good paused=0.0% (spend 0.0%)  bad caught=55.8% (spend 94.2%)
     q=0.99  good paused=0.0% (spend 0.0%)  bad caught=51.2% (spend 92.8%)
   single keyword, P(paused within 7 days):
-    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.27
-    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.33
-    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.50
-    impr/day=  200 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.58  posterior=0.42
-    impr/day=  200 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.74  posterior=0.57
-    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.95  posterior=0.87
-    impr/day=  500 r=0.8  daily=0.99  daily+500=0.85  daily+500(z)=0.65  30d+500=0.60  posterior=0.42
-    impr/day=  500 r=1.0  daily=1.00  daily+500=0.91  daily+500(z)=0.68  30d+500=0.79  posterior=0.62
-    impr/day=  500 r=2.0  daily=1.00  daily+500=0.98  daily+500(z)=0.68  30d+500=0.99  posterior=0.97
-    impr/day= 1000 r=0.8  daily=0.97  daily+500=0.97  daily+500(z)=0.94  30d+500=0.57  posterior=0.38
-    impr/day= 1000 r=1.0  daily=1.00  daily+500=1.00  daily+500(z)=0.99  30d+500=0.81  posterior=0.65
-    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=0.99
-    impr/day= 3000 r=0.8  daily=0.90  daily+500=0.90  daily+500(z)=0.90  30d+500=0.39  posterior=0.24
-    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily+500(z)=0.99  30d+500=0.79  posterior=0.67
-    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
+    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.27
+    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.33
+    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.50
+    impr/day=  200 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.58  posterior=0.42
+    impr/day=  200 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.74  posterior=0.57
+    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.95  posterior=0.87
+    impr/day=  500 r=0.8  daily=0.99  daily+500=0.85  daily(z)=0.87  daily+500(z)=0.65  30d+500=0.60  posterior=0.42
+    impr/day=  500 r=1.0  daily=1.00  daily+500=0.91  daily(z)=0.91  daily+500(z)=0.68  30d+500=0.79  posterior=0.62
+    impr/day=  500 r=2.0  daily=1.00  daily+500=0.98  daily(z)=0.90  daily+500(z)=0.68  30d+500=0.99  posterior=0.97
+    impr/day= 1000 r=0.8  daily=0.97  daily+500=0.97  daily(z)=0.94  daily+500(z)=0.94  30d+500=0.57  posterior=0.38
+    impr/day= 1000 r=1.0  daily=1.00  daily+500=1.00  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.81  posterior=0.65
+    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=0.99
+    impr/day= 3000 r=0.8  daily=0.90  daily+500=0.90  daily(z)=0.90  daily+500(z)=0.90  30d+500=0.39  posterior=0.24
+    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.79  posterior=0.67
+    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
 median_impr=60.0 ctr=0.02 q*=0.565 matched bad catch=75.0%
-  daily_no_guard                   false pauses=98.5% of ok keywords (96.2% of ok spend)  bad caught=98.7% (100.0% of bad spend)  blocked vs no guard: count 0%, spend 0%
-  daily_guard500                   false pauses=8.3% of ok keywords (50.6% of ok spend)  bad caught=9.0% (55.1% of bad spend)  blocked vs no guard: count 92%, spend 47%
-  daily_guard500_zero_never_fires  false pauses=4.4% of ok keywords (37.7% of ok spend)  bad caught=4.9% (41.9% of bad spend)  blocked vs no guard: count 96%, spend 61%
-  lookback30_guard500              false pauses=41.5% of ok keywords (44.2% of ok spend)  bad caught=76.4% (98.2% of bad spend)  blocked vs no guard: count 58%, spend 54%
-  posterior                        false pauses=37.1% of ok keywords (36.3% of ok spend)  bad caught=76.6% (97.7% of bad spend)  blocked vs no guard: count 62%, spend 62%
+  daily_no_guard                   false pauses=98.5% of ok keywords (96.2% of ok spend)  bad caught=98.7% (100.0% of bad spend)
+  daily_guard500                   false pauses=8.3% of ok keywords (50.6% of ok spend)  bad caught=9.0% (55.1% of bad spend)  guard blocks vs its unguarded twin: count 92%, spend 47%
+  daily_no_guard_zero_never_fires  false pauses=4.4% of ok keywords (37.7% of ok spend)  bad caught=4.9% (42.0% of bad spend)
+  daily_guard500_zero_never_fires  false pauses=4.4% of ok keywords (37.7% of ok spend)  bad caught=4.9% (41.9% of bad spend)  guard blocks vs its unguarded twin: count 0%, spend 0%
+  lookback30_guard500              false pauses=41.5% of ok keywords (44.2% of ok spend)  bad caught=76.4% (98.2% of bad spend)
+  posterior                        false pauses=37.1% of ok keywords (36.3% of ok spend)  bad caught=76.6% (97.7% of bad spend)
   posterior frontier (q: false pause share of good, bad caught):
     q=0.60  good paused=25.7% (spend 28.7%)  bad caught=67.4% (spend 96.4%)
     q=0.70  good paused=8.5% (spend 12.9%)  bad caught=48.2% (spend 90.8%)
@@ -103,27 +107,28 @@ median_impr=60.0 ctr=0.02 q*=0.565 matched bad catch=75.0%
     q=0.98  good paused=0.0% (spend 0.0%)  bad caught=11.9% (spend 58.9%)
     q=0.99  good paused=0.0% (spend 0.0%)  bad caught=9.3% (spend 53.2%)
   single keyword, P(paused within 7 days):
-    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.15
-    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.16
-    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.22
-    impr/day=  200 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.66  posterior=0.54
-    impr/day=  200 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.72  posterior=0.60
-    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.90  posterior=0.81
-    impr/day=  500 r=0.8  daily=0.99  daily+500=0.89  daily+500(z)=0.00  30d+500=0.69  posterior=0.59
-    impr/day=  500 r=1.0  daily=1.00  daily+500=0.92  daily+500(z)=0.00  30d+500=0.80  posterior=0.70
-    impr/day=  500 r=2.0  daily=1.00  daily+500=0.97  daily+500(z)=0.00  30d+500=0.96  posterior=0.93
-    impr/day= 1000 r=0.8  daily=0.98  daily+500=0.98  daily+500(z)=0.68  30d+500=0.67  posterior=0.53
-    impr/day= 1000 r=1.0  daily=1.00  daily+500=1.00  daily+500(z)=0.70  30d+500=0.81  posterior=0.71
-    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=0.67  30d+500=0.99  posterior=0.98
-    impr/day= 3000 r=0.8  daily=0.96  daily+500=0.96  daily+500(z)=0.94  30d+500=0.54  posterior=0.43
-    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily+500(z)=0.99  30d+500=0.80  posterior=0.73
-    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
+    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.15
+    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.16
+    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.22
+    impr/day=  200 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.66  posterior=0.54
+    impr/day=  200 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.72  posterior=0.60
+    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.90  posterior=0.81
+    impr/day=  500 r=0.8  daily=0.99  daily+500=0.89  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.69  posterior=0.59
+    impr/day=  500 r=1.0  daily=1.00  daily+500=0.92  daily(z)=0.01  daily+500(z)=0.00  30d+500=0.80  posterior=0.70
+    impr/day=  500 r=2.0  daily=1.00  daily+500=0.97  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.96  posterior=0.93
+    impr/day= 1000 r=0.8  daily=0.98  daily+500=0.98  daily(z)=0.68  daily+500(z)=0.68  30d+500=0.67  posterior=0.53
+    impr/day= 1000 r=1.0  daily=1.00  daily+500=1.00  daily(z)=0.70  daily+500(z)=0.70  30d+500=0.81  posterior=0.71
+    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=0.67  daily+500(z)=0.67  30d+500=0.99  posterior=0.98
+    impr/day= 3000 r=0.8  daily=0.96  daily+500=0.96  daily(z)=0.94  daily+500(z)=0.94  30d+500=0.54  posterior=0.43
+    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.80  posterior=0.73
+    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
 median_impr=60.0 ctr=0.08 q*=0.69 matched bad catch=78.5%
-  daily_no_guard                   false pauses=98.2% of ok keywords (82.7% of ok spend)  bad caught=99.9% (100.0% of bad spend)  blocked vs no guard: count 0%, spend 0%
-  daily_guard500                   false pauses=6.9% of ok keywords (37.2% of ok spend)  bad caught=9.0% (55.1% of bad spend)  blocked vs no guard: count 93%, spend 55%
-  daily_guard500_zero_never_fires  false pauses=6.8% of ok keywords (37.0% of ok spend)  bad caught=8.9% (54.8% of bad spend)  blocked vs no guard: count 93%, spend 55%
-  lookback30_guard500              false pauses=25.5% of ok keywords (22.7% of ok spend)  bad caught=79.3% (98.9% of bad spend)  blocked vs no guard: count 74%, spend 73%
-  posterior                        false pauses=13.7% of ok keywords (10.3% of ok spend)  bad caught=80.6% (98.6% of bad spend)  blocked vs no guard: count 86%, spend 88%
+  daily_no_guard                   false pauses=98.2% of ok keywords (82.7% of ok spend)  bad caught=99.9% (100.0% of bad spend)
+  daily_guard500                   false pauses=6.9% of ok keywords (37.2% of ok spend)  bad caught=9.0% (55.1% of bad spend)  guard blocks vs its unguarded twin: count 93%, spend 55%
+  daily_no_guard_zero_never_fires  false pauses=20.8% of ok keywords (59.1% of ok spend)  bad caught=23.3% (77.2% of bad spend)
+  daily_guard500_zero_never_fires  false pauses=6.8% of ok keywords (37.0% of ok spend)  bad caught=8.9% (54.8% of bad spend)  guard blocks vs its unguarded twin: count 67%, spend 37%
+  lookback30_guard500              false pauses=25.5% of ok keywords (22.7% of ok spend)  bad caught=79.3% (98.9% of bad spend)
+  posterior                        false pauses=13.7% of ok keywords (10.3% of ok spend)  bad caught=80.6% (98.6% of bad spend)
   posterior frontier (q: false pause share of good, bad caught):
     q=0.60  good paused=29.4% (spend 17.9%)  bad caught=89.8% (spend 99.4%)
     q=0.70  good paused=12.1% (spend 8.7%)  bad caught=79.5% (spend 98.5%)
@@ -133,18 +138,18 @@ median_impr=60.0 ctr=0.08 q*=0.69 matched bad catch=78.5%
     q=0.98  good paused=0.0% (spend 0.0%)  bad caught=37.4% (spend 86.4%)
     q=0.99  good paused=0.0% (spend 0.0%)  bad caught=33.2% (spend 83.9%)
   single keyword, P(paused within 7 days):
-    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.15
-    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.22
-    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.42
-    impr/day=  200 r=0.8  daily=0.98  daily+500=0.00  daily+500(z)=0.00  30d+500=0.54  posterior=0.28
-    impr/day=  200 r=1.0  daily=0.99  daily+500=0.00  daily+500(z)=0.00  30d+500=0.73  posterior=0.44
-    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily+500(z)=0.00  30d+500=0.97  posterior=0.86
-    impr/day=  500 r=0.8  daily=0.97  daily+500=0.79  daily+500(z)=0.72  30d+500=0.53  posterior=0.26
-    impr/day=  500 r=1.0  daily=0.99  daily+500=0.89  daily+500(z)=0.80  30d+500=0.79  posterior=0.53
-    impr/day=  500 r=2.0  daily=1.00  daily+500=0.98  daily+500(z)=0.86  30d+500=1.00  posterior=0.98
-    impr/day= 1000 r=0.8  daily=0.95  daily+500=0.95  daily+500(z)=0.94  30d+500=0.51  posterior=0.25
-    impr/day= 1000 r=1.0  daily=0.99  daily+500=0.99  daily+500(z)=0.99  30d+500=0.80  posterior=0.55
-    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
-    impr/day= 3000 r=0.8  daily=0.81  daily+500=0.81  daily+500(z)=0.81  30d+500=0.27  posterior=0.12
-    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily+500(z)=0.99  30d+500=0.79  posterior=0.58
-    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
+    impr/day=   50 r=0.8  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.15
+    impr/day=   50 r=1.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.22
+    impr/day=   50 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.00  daily+500(z)=0.00  30d+500=0.00  posterior=0.42
+    impr/day=  200 r=0.8  daily=0.98  daily+500=0.00  daily(z)=0.29  daily+500(z)=0.00  30d+500=0.54  posterior=0.28
+    impr/day=  200 r=1.0  daily=0.99  daily+500=0.00  daily(z)=0.30  daily+500(z)=0.00  30d+500=0.73  posterior=0.44
+    impr/day=  200 r=2.0  daily=1.00  daily+500=0.00  daily(z)=0.27  daily+500(z)=0.00  30d+500=0.97  posterior=0.86
+    impr/day=  500 r=0.8  daily=0.97  daily+500=0.79  daily(z)=0.94  daily+500(z)=0.72  30d+500=0.53  posterior=0.26
+    impr/day=  500 r=1.0  daily=0.99  daily+500=0.89  daily(z)=0.97  daily+500(z)=0.80  30d+500=0.79  posterior=0.53
+    impr/day=  500 r=2.0  daily=1.00  daily+500=0.98  daily(z)=0.99  daily+500(z)=0.86  30d+500=1.00  posterior=0.98
+    impr/day= 1000 r=0.8  daily=0.95  daily+500=0.95  daily(z)=0.94  daily+500(z)=0.94  30d+500=0.51  posterior=0.25
+    impr/day= 1000 r=1.0  daily=0.99  daily+500=0.99  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.80  posterior=0.55
+    impr/day= 1000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00
+    impr/day= 3000 r=0.8  daily=0.81  daily+500=0.81  daily(z)=0.81  daily+500(z)=0.81  30d+500=0.27  posterior=0.12
+    impr/day= 3000 r=1.0  daily=0.99  daily+500=0.99  daily(z)=0.99  daily+500(z)=0.99  30d+500=0.79  posterior=0.58
+    impr/day= 3000 r=2.0  daily=1.00  daily+500=1.00  daily(z)=1.00  daily+500(z)=1.00  30d+500=1.00  posterior=1.00

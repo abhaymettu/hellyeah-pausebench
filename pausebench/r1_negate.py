@@ -21,6 +21,7 @@ def portfolio(seed, c_sigma=0.6):
     rng = np.random.default_rng(seed)
     c = rng.lognormal(0.0, c_sigma, N_QUERIES)
     spend = rng.lognormal(np.log(0.5), 1.5, N_QUERIES)
+    c = c / (spend.sum() / (spend / c).sum())  # unit = the account's average CPA (total spend / expected conversions)
     n_conv = rng.poisson(spend / c)
     times = [np.sort(rng.uniform(0, s, k)) for s, k in zip(spend, n_conv)]
     return c, spend, times
@@ -147,7 +148,7 @@ def summarize(res):
         t = res["test"][name]
         lines.append(
             f"  {name:10s} negations={t['negations']:6d}  good share={t['negations_good'] / max(t['negations'], 1):.1%}"
-            f"  bad caught={t['bad_caught'] / t['bad']:.1%}  wasted on bad={t['wasted_on_bad']:.0f}"
+            f"  bad caught={t['bad_caught'] / t['bad']:.1%} (of those reaching 2x: {t['bad_caught_eligible'] / max(t['bad_eligible'], 1):.1%})  wasted on bad={t['wasted_on_bad']:.0f}"
             f"  good conv lost={t['lost_good_conversions']:.0f} ({t['lost_good_conversions'] / t['good_conversions_total']:.2%})"
         )
     lines.append("  P(negated | true CPA c), S=10:")

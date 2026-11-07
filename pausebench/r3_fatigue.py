@@ -110,7 +110,8 @@ def score(c, flag_day):
     caught = crossers & flagged & ~false_alarm
     delay = (flag_day - cross)[caught]
     # days a truly fatigued creative keeps running unflagged, censored at the horizon (no selection on being caught)
-    unflagged = np.clip(np.where(false_alarm, DAYS, flag_day) - cross, 0, None)[crossers]
+    # a false alarm also pulls the creative, so it stops the clock too
+    unflagged = np.clip(flag_day - cross, 0, None)[crossers]
     return {"n": m, "false_alarms": int(false_alarm.sum()), "crossers": int(crossers.sum()),
             "fatigued_days_unflagged": float(unflagged.sum()),
             "caught": int(caught.sum()), "missed": int((crossers & ~flagged).sum()),

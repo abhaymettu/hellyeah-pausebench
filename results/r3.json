@@ -15,7 +15,7 @@
       "n": 16000,
       "false_alarms": 173,
       "crossers": 7342,
-      "fatigued_days_unflagged": 101615.0,
+      "fatigued_days_unflagged": 101596.0,
       "caught": 3304,
       "missed": 4036,
       "delay_sum": 30818.0
@@ -24,7 +24,7 @@
       "n": 16000,
       "false_alarms": 1065,
       "crossers": 7342,
-      "fatigued_days_unflagged": 75502.0,
+      "fatigued_days_unflagged": 75049.0,
       "caught": 5559,
       "missed": 1737,
       "delay_sum": 46833.0
@@ -33,7 +33,7 @@
       "n": 16000,
       "false_alarms": 109,
       "crossers": 7342,
-      "fatigued_days_unflagged": 93187.0,
+      "fatigued_days_unflagged": 93127.0,
       "caught": 4659,
       "missed": 2676,
       "delay_sum": 51655.0
@@ -44,7 +44,7 @@
       "n": 16000,
       "false_alarms": 56,
       "crossers": 7224,
-      "fatigued_days_unflagged": 91717.0,
+      "fatigued_days_unflagged": 91699.0,
       "caught": 3365,
       "missed": 3857,
       "delay_sum": 25411.0
@@ -53,7 +53,7 @@
       "n": 16000,
       "false_alarms": 307,
       "crossers": 7224,
-      "fatigued_days_unflagged": 62579.0,
+      "fatigued_days_unflagged": 62468.0,
       "caught": 5940,
       "missed": 1272,
       "delay_sum": 45521.0
@@ -62,7 +62,7 @@
       "n": 16000,
       "false_alarms": 65,
       "crossers": 7224,
-      "fatigued_days_unflagged": 65884.0,
+      "fatigued_days_unflagged": 65877.0,
       "caught": 5663,
       "missed": 1560,
       "delay_sum": 45987.0
@@ -82,7 +82,7 @@
       "n": 16000,
       "false_alarms": 25,
       "crossers": 7149,
-      "fatigued_days_unflagged": 52508.0,
+      "fatigued_days_unflagged": 52498.0,
       "caught": 6240,
       "missed": 908,
       "delay_sum": 42656.0
@@ -91,7 +91,7 @@
       "n": 16000,
       "false_alarms": 20,
       "crossers": 7149,
-      "fatigued_days_unflagged": 44551.0,
+      "fatigued_days_unflagged": 44541.0,
       "caught": 6434,
       "missed": 714,
       "delay_sum": 37221.0
@@ -162,7 +162,7 @@
       "n": 16000,
       "false_alarms": 345,
       "crossers": 6593,
-      "fatigued_days_unflagged": 84834.0,
+      "fatigued_days_unflagged": 84725.0,
       "caught": 2754,
       "missed": 3827,
       "delay_sum": 18921.0
@@ -171,7 +171,7 @@
       "n": 16000,
       "false_alarms": 2110,
       "crossers": 6593,
-      "fatigued_days_unflagged": 49108.0,
+      "fatigued_days_unflagged": 48373.0,
       "caught": 5624,
       "missed": 890,
       "delay_sum": 33752.0
@@ -180,7 +180,7 @@
       "n": 16000,
       "false_alarms": 132,
       "crossers": 6593,
-      "fatigued_days_unflagged": 80990.0,
+      "fatigued_days_unflagged": 80931.0,
       "caught": 4149,
       "missed": 2438,
       "delay_sum": 44812.0
@@ -191,7 +191,7 @@
       "n": 16000,
       "false_alarms": 87,
       "crossers": 6502,
-      "fatigued_days_unflagged": 81819.0,
+      "fatigued_days_unflagged": 81805.0,
       "caught": 2663,
       "missed": 3838,
       "delay_sum": 17873.0
@@ -200,7 +200,7 @@
       "n": 16000,
       "false_alarms": 531,
       "crossers": 6502,
-      "fatigued_days_unflagged": 47503.0,
+      "fatigued_days_unflagged": 47296.0,
       "caught": 5591,
       "missed": 887,
       "delay_sum": 35522.0
@@ -209,7 +209,7 @@
       "n": 16000,
       "false_alarms": 66,
       "crossers": 6502,
-      "fatigued_days_unflagged": 57751.0,
+      "fatigued_days_unflagged": 57704.0,
       "caught": 5027,
       "missed": 1469,
       "delay_sum": 39896.0
@@ -229,7 +229,7 @@
       "n": 16000,
       "false_alarms": 18,
       "crossers": 6417,
-      "fatigued_days_unflagged": 43484.0,
+      "fatigued_days_unflagged": 43465.0,
       "caught": 5695,
       "missed": 720,
       "delay_sum": 36015.0
@@ -238,7 +238,7 @@
       "n": 16000,
       "false_alarms": 7,
       "crossers": 6417,
-      "fatigued_days_unflagged": 37473.0,
+      "fatigued_days_unflagged": 37461.0,
       "caught": 5825,
       "missed": 591,
       "delay_sum": 31693.0
@@ -321,7 +321,7 @@
       "n": 16000,
       "false_alarms": 199,
       "crossers": 7342,
-      "fatigued_days_unflagged": 102166.0,
+      "fatigued_days_unflagged": 102122.0,
       "caught": 3283,
       "missed": 4053,
       "delay_sum": 30870.0
@@ -330,7 +330,7 @@
       "n": 16000,
       "false_alarms": 1227,
       "crossers": 7342,
-      "fatigued_days_unflagged": 75954.0,
+      "fatigued_days_unflagged": 75504.0,
       "caught": 5559,
       "missed": 1733,
       "delay_sum": 46835.0
@@ -339,7 +339,7 @@
       "n": 16000,
       "false_alarms": 87,
       "crossers": 7342,
-      "fatigued_days_unflagged": 96585.0,
+      "fatigued_days_unflagged": 96575.0,
       "caught": 4494,
       "missed": 2847,
       "delay_sum": 51506.0
@@ -350,7 +350,7 @@
       "n": 16000,
       "false_alarms": 101,
       "crossers": 7268,
-      "fatigued_days_unflagged": 94805.0,
+      "fatigued_days_unflagged": 94780.0,
       "caught": 3313,
       "missed": 3952,
       "delay_sum": 26335.0
@@ -359,7 +359,7 @@
       "n": 16000,
       "false_alarms": 509,
       "crossers": 7268,
-      "fatigued_days_unflagged": 64991.0,
+      "fatigued_days_unflagged": 64813.0,
       "caught": 5931,
       "missed": 1317,
       "delay_sum": 46508.0
@@ -368,7 +368,7 @@
       "n": 16000,
       "false_alarms": 74,
       "crossers": 7268,
-      "fatigued_days_unflagged": 73863.0,
+      "fatigued_days_unflagged": 73804.0,
       "caught": 5416,
       "missed": 1845,
       "delay_sum": 48912.0
@@ -388,7 +388,7 @@
       "n": 16000,
       "false_alarms": 114,
       "crossers": 7353,
-      "fatigued_days_unflagged": 57981.0,
+      "fatigued_days_unflagged": 57943.0,
       "caught": 6292,
       "missed": 1056,
       "delay_sum": 45336.0
@@ -397,7 +397,7 @@
       "n": 16000,
       "false_alarms": 42,
       "crossers": 7353,
-      "fatigued_days_unflagged": 57610.0,
+      "fatigued_days_unflagged": 57587.0,
       "caught": 6175,
       "missed": 1175,
       "delay_sum": 44118.0
@@ -417,7 +417,7 @@
       "n": 16000,
       "false_alarms": 45,
       "crossers": 7209,
-      "fatigued_days_unflagged": 52174.0,
+      "fatigued_days_unflagged": 52156.0,
       "caught": 6351,
       "missed": 856,
       "delay_sum": 42711.0
@@ -455,7 +455,7 @@
       "n": 16000,
       "false_alarms": 24,
       "crossers": 7319,
-      "fatigued_days_unflagged": 44921.0,
+      "fatigued_days_unflagged": 44909.0,
       "caught": 6637,
       "missed": 681,
       "delay_sum": 37814.0
@@ -468,7 +468,7 @@
       "n": 16000,
       "false_alarms": 347,
       "crossers": 6619,
-      "fatigued_days_unflagged": 84462.0,
+      "fatigued_days_unflagged": 84360.0,
       "caught": 2775,
       "missed": 3833,
       "delay_sum": 19244.0
@@ -477,7 +477,7 @@
       "n": 16000,
       "false_alarms": 2372,
       "crossers": 6619,
-      "fatigued_days_unflagged": 48509.0,
+      "fatigued_days_unflagged": 47441.0,
       "caught": 5589,
       "missed": 912,
       "delay_sum": 32241.0
@@ -486,7 +486,7 @@
       "n": 16000,
       "false_alarms": 133,
       "crossers": 6619,
-      "fatigued_days_unflagged": 82087.0,
+      "fatigued_days_unflagged": 81997.0,
       "caught": 4075,
       "missed": 2535,
       "delay_sum": 44345.0
@@ -497,7 +497,7 @@
       "n": 16000,
       "false_alarms": 164,
       "crossers": 6492,
-      "fatigued_days_unflagged": 82827.0,
+      "fatigued_days_unflagged": 82797.0,
       "caught": 2634,
       "missed": 3855,
       "delay_sum": 17752.0
@@ -506,7 +506,7 @@
       "n": 16000,
       "false_alarms": 956,
       "crossers": 6492,
-      "fatigued_days_unflagged": 47454.0,
+      "fatigued_days_unflagged": 47039.0,
       "caught": 5558,
       "missed": 889,
       "delay_sum": 34513.0
@@ -515,7 +515,7 @@
       "n": 16000,
       "false_alarms": 99,
       "crossers": 6492,
-      "fatigued_days_unflagged": 61899.0,
+      "fatigued_days_unflagged": 61864.0,
       "caught": 4860,
       "missed": 1627,
       "delay_sum": 40935.0
@@ -526,7 +526,7 @@
       "n": 16000,
       "false_alarms": 52,
       "crossers": 6427,
-      "fatigued_days_unflagged": 81156.0,
+      "fatigued_days_unflagged": 81146.0,
       "caught": 2544,
       "missed": 3882,
       "delay_sum": 15798.0
@@ -535,7 +535,7 @@
       "n": 16000,
       "false_alarms": 244,
       "crossers": 6427,
-      "fatigued_days_unflagged": 44362.0,
+      "fatigued_days_unflagged": 44300.0,
       "caught": 5637,
       "missed": 783,
       "delay_sum": 35078.0
@@ -544,7 +544,7 @@
       "n": 16000,
       "false_alarms": 70,
       "crossers": 6427,
-      "fatigued_days_unflagged": 46503.0,
+      "fatigued_days_unflagged": 46473.0,
       "caught": 5442,
       "missed": 982,
       "delay_sum": 35512.0
@@ -555,7 +555,7 @@
       "n": 16000,
       "false_alarms": 19,
       "crossers": 6373,
-      "fatigued_days_unflagged": 78982.0,
+      "fatigued_days_unflagged": 78966.0,
       "caught": 2601,
       "missed": 3770,
       "delay_sum": 15631.0
@@ -564,7 +564,7 @@
       "n": 16000,
       "false_alarms": 98,
       "crossers": 6373,
-      "fatigued_days_unflagged": 43051.0,
+      "fatigued_days_unflagged": 43027.0,
       "caught": 5645,
       "missed": 725,
       "delay_sum": 34921.0
@@ -573,7 +573,7 @@
       "n": 16000,
       "false_alarms": 46,
       "crossers": 6373,
-      "fatigued_days_unflagged": 39489.0,
+      "fatigued_days_unflagged": 39477.0,
       "caught": 5678,
       "missed": 694,
       "delay_sum": 32062.0
@@ -602,7 +602,7 @@
       "n": 16000,
       "false_alarms": 30,
       "crossers": 6352,
-      "fatigued_days_unflagged": 36052.0,
+      "fatigued_days_unflagged": 36036.0,
       "caught": 5762,
       "missed": 588,
       "delay_sum": 29956.0
@@ -627,7 +627,7 @@
       "n": 16000,
       "false_alarms": 220,
       "crossers": 7342,
-      "fatigued_days_unflagged": 103243.0,
+      "fatigued_days_unflagged": 103196.0,
       "caught": 3218,
       "missed": 4118,
       "delay_sum": 30284.0
@@ -636,7 +636,7 @@
       "n": 16000,
       "false_alarms": 1479,
       "crossers": 7342,
-      "fatigued_days_unflagged": 76778.0,
+      "fatigued_days_unflagged": 76253.0,
       "caught": 5486,
       "missed": 1798,
       "delay_sum": 45337.0
@@ -645,7 +645,7 @@
       "n": 16000,
       "false_alarms": 76,
       "crossers": 7342,
-      "fatigued_days_unflagged": 105373.0,
+      "fatigued_days_unflagged": 105363.0,
       "caught": 4032,
       "missed": 3309,
       "delay_sum": 50166.0
@@ -656,7 +656,7 @@
       "n": 16000,
       "false_alarms": 166,
       "crossers": 7268,
-      "fatigued_days_unflagged": 97246.0,
+      "fatigued_days_unflagged": 97218.0,
       "caught": 3260,
       "missed": 4004,
       "delay_sum": 27462.0
@@ -665,7 +665,7 @@
       "n": 16000,
       "false_alarms": 874,
       "crossers": 7268,
-      "fatigued_days_unflagged": 68941.0,
+      "fatigued_days_unflagged": 68570.0,
       "caught": 5718,
       "missed": 1511,
       "delay_sum": 46048.0
@@ -674,7 +674,7 @@
       "n": 16000,
       "false_alarms": 67,
       "crossers": 7268,
-      "fatigued_days_unflagged": 87991.0,
+      "fatigued_days_unflagged": 87981.0,
       "caught": 4792,
       "missed": 2475,
       "delay_sum": 51042.0
@@ -685,7 +685,7 @@
       "n": 16000,
       "false_alarms": 108,
       "crossers": 7333,
-      "fatigued_days_unflagged": 94452.0,
+      "fatigued_days_unflagged": 94411.0,
       "caught": 3367,
       "missed": 3962,
       "delay_sum": 25488.0
@@ -694,7 +694,7 @@
       "n": 16000,
       "false_alarms": 652,
       "crossers": 7333,
-      "fatigued_days_unflagged": 63116.0,
+      "fatigued_days_unflagged": 62889.0,
       "caught": 6053,
       "missed": 1256,
       "delay_sum": 45046.0
@@ -703,7 +703,7 @@
       "n": 16000,
       "false_alarms": 83,
       "crossers": 7333,
-      "fatigued_days_unflagged": 77529.0,
+      "fatigued_days_unflagged": 77512.0,
       "caught": 5328,
       "missed": 2003,
       "delay_sum": 49636.0
@@ -723,7 +723,7 @@
       "n": 16000,
       "false_alarms": 581,
       "crossers": 7261,
-      "fatigued_days_unflagged": 61136.0,
+      "fatigued_days_unflagged": 60899.0,
       "caught": 6022,
       "missed": 1212,
       "delay_sum": 44446.0
@@ -732,7 +732,7 @@
       "n": 16000,
       "false_alarms": 92,
       "crossers": 7261,
-      "fatigued_days_unflagged": 73080.0,
+      "fatigued_days_unflagged": 73040.0,
       "caught": 5405,
       "missed": 1852,
       "delay_sum": 48220.0
@@ -743,7 +743,7 @@
       "n": 16000,
       "false_alarms": 83,
       "crossers": 7233,
-      "fatigued_days_unflagged": 91568.0,
+      "fatigued_days_unflagged": 91555.0,
       "caught": 3289,
       "missed": 3942,
       "delay_sum": 23500.0
@@ -752,7 +752,7 @@
       "n": 16000,
       "false_alarms": 549,
       "crossers": 7233,
-      "fatigued_days_unflagged": 59380.0,
+      "fatigued_days_unflagged": 59105.0,
       "caught": 6030,
       "missed": 1176,
       "delay_sum": 43199.0
@@ -761,7 +761,7 @@
       "n": 16000,
       "false_alarms": 70,
       "crossers": 7233,
-      "fatigued_days_unflagged": 70528.0,
+      "fatigued_days_unflagged": 70483.0,
       "caught": 5473,
       "missed": 1755,
       "delay_sum": 47228.0
@@ -774,7 +774,7 @@
       "n": 16000,
       "false_alarms": 462,
       "crossers": 6717,
-      "fatigued_days_unflagged": 85625.0,
+      "fatigued_days_unflagged": 85543.0,
       "caught": 2837,
       "missed": 3871,
       "delay_sum": 19606.0
@@ -783,7 +783,7 @@
       "n": 16000,
       "false_alarms": 2961,
       "crossers": 6717,
-      "fatigued_days_unflagged": 48621.0,
+      "fatigued_days_unflagged": 47273.0,
       "caught": 5682,
       "missed": 892,
       "delay_sum": 31729.0
@@ -792,7 +792,7 @@
       "n": 16000,
       "false_alarms": 160,
       "crossers": 6717,
-      "fatigued_days_unflagged": 87253.0,
+      "fatigued_days_unflagged": 87169.0,
       "caught": 3966,
       "missed": 2742,
       "delay_sum": 44861.0
@@ -803,7 +803,7 @@
       "n": 16000,
       "false_alarms": 320,
       "crossers": 6552,
-      "fatigued_days_unflagged": 82846.0,
+      "fatigued_days_unflagged": 82760.0,
       "caught": 2719,
       "missed": 3823,
       "delay_sum": 18232.0
@@ -812,7 +812,7 @@
       "n": 16000,
       "false_alarms": 1919,
       "crossers": 6552,
-      "fatigued_days_unflagged": 47066.0,
+      "fatigued_days_unflagged": 46218.0,
       "caught": 5570,
       "missed": 891,
       "delay_sum": 32283.0
@@ -821,7 +821,7 @@
       "n": 16000,
       "false_alarms": 182,
       "crossers": 6552,
-      "fatigued_days_unflagged": 69939.0,
+      "fatigued_days_unflagged": 69856.0,
       "caught": 4527,
       "missed": 2015,
       "delay_sum": 41942.0
@@ -832,7 +832,7 @@
       "n": 16000,
       "false_alarms": 233,
       "crossers": 6538,
-      "fatigued_days_unflagged": 83985.0,
+      "fatigued_days_unflagged": 83931.0,
       "caught": 2592,
       "missed": 3941,
       "delay_sum": 16825.0
@@ -841,7 +841,7 @@
       "n": 16000,
       "false_alarms": 1311,
       "crossers": 6538,
-      "fatigued_days_unflagged": 46345.0,
+      "fatigued_days_unflagged": 45725.0,
       "caught": 5615,
       "missed": 862,
       "delay_sum": 32940.0
@@ -850,7 +850,7 @@
       "n": 16000,
       "false_alarms": 206,
       "crossers": 6538,
-      "fatigued_days_unflagged": 61469.0,
+      "fatigued_days_unflagged": 61381.0,
       "caught": 4910,
       "missed": 1619,
       "delay_sum": 40236.0
@@ -861,7 +861,7 @@
       "n": 16000,
       "false_alarms": 201,
       "crossers": 6474,
-      "fatigued_days_unflagged": 82106.0,
+      "fatigued_days_unflagged": 82051.0,
       "caught": 2589,
       "missed": 3879,
       "delay_sum": 16313.0
@@ -870,7 +870,7 @@
       "n": 16000,
       "false_alarms": 1181,
       "crossers": 6474,
-      "fatigued_days_unflagged": 44575.0,
+      "fatigued_days_unflagged": 44040.0,
       "caught": 5582,
       "missed": 836,
       "delay_sum": 31731.0
@@ -879,7 +879,7 @@
       "n": 16000,
       "false_alarms": 195,
       "crossers": 6474,
-      "fatigued_days_unflagged": 56701.0,
+      "fatigued_days_unflagged": 56642.0,
       "caught": 5029,
       "missed": 1438,
       "delay_sum": 38181.0
@@ -890,7 +890,7 @@
       "n": 16000,
       "false_alarms": 181,
       "crossers": 6576,
-      "fatigued_days_unflagged": 82636.0,
+      "fatigued_days_unflagged": 82579.0,
       "caught": 2652,
       "missed": 3918,
       "delay_sum": 16576.0
@@ -899,7 +899,7 @@
       "n": 16000,
       "false_alarms": 1112,
       "crossers": 6576,
-      "fatigued_days_unflagged": 45294.0,
+      "fatigued_days_unflagged": 44761.0,
       "caught": 5685,
       "missed": 835,
       "delay_sum": 32965.0
@@ -908,7 +908,7 @@
       "n": 16000,
       "false_alarms": 191,
       "crossers": 6576,
-      "fatigued_days_unflagged": 56361.0,
+      "fatigued_days_unflagged": 56267.0,
       "caught": 5168,
       "missed": 1398,
       "delay_sum": 38721.0

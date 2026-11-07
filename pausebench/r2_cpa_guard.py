@@ -86,6 +86,7 @@ def policies(a0, b0, q):
     return {
         "daily_no_guard": lambda i, v, c: daily_rule(i, v, c, 0),
         "daily_guard500": lambda i, v, c: daily_rule(i, v, c, GUARD),
+        "daily_no_guard_zero_never_fires": lambda i, v, c: daily_rule(i, v, c, 0, zero_fires=False),
         "daily_guard500_zero_never_fires": lambda i, v, c: daily_rule(i, v, c, GUARD, zero_fires=False),
         "lookback30_guard500": lambda i, v, c: lookback_rule(i, v, c, GUARD),
         "posterior": lambda i, v, c: posterior_rule(v, c, a0, b0, q),
@@ -162,21 +163,25 @@ def run(median_impr=60.0, ctr=0.05):
             "matched_bad_catch": float(target), "portfolio": totals, "curves": curves, "frontier": frontier}
 
 
-SHORT = {"daily_no_guard": "daily", "daily_guard500": "daily+500", "daily_guard500_zero_never_fires": "daily+500(z)",
+SHORT = {"daily_no_guard": "daily", "daily_guard500": "daily+500", "daily_no_guard_zero_never_fires": "daily(z)", "daily_guard500_zero_never_fires": "daily+500(z)",
          "lookback30_guard500": "30d+500", "posterior": "posterior"}
 
 
 def summarize(res):
     p = res["portfolio"]
     out = [f"median_impr={res['median_impr']} ctr={res['ctr']} q*={res['q_star']} matched bad catch={res['matched_bad_catch']:.1%}"]
-    base = p["daily_no_guard"]
+    twin = {"daily_guard500": "daily_no_guard", "daily_guard500_zero_never_fires": "daily_no_guard_zero_never_fires"}
     for name, t in p.items():
+        blocked = ""
+        if name in twin:
+            b = p[twin[name]]
+            blocked = (f"  guard blocks vs its unguarded twin: count {1 - t['false_pauses'] / b['false_pauses']:.0%},"
+                       f" spend {1 - t['false_pause_spend'] / b['false_pause_spend']:.0%}")
         out.append(
             f"  {name:32s} false pauses={t['false_pauses'] / t['ok']:.1%} of ok keywords"
             f" ({t['false_pause_spend'] / t['ok_spend']:.1%} of ok spend)"
             f"  bad caught={t['bad_caught'] / t['bad']:.1%} ({t['bad_spend_caught'] / t['bad_spend']:.1%} of bad spend)"
-            f"  blocked vs no guard: count {1 - t['false_pauses'] / base['false_pauses']:.0%},"
-            f" spend {1 - t['false_pause_spend'] / base['false_pause_spend']:.0%}"
+            + blocked
         )
     out.append("  posterior frontier (q: false pause share of good, bad caught):")
     for f in res["frontier"]:

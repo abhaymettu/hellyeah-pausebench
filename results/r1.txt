@@ -1,33 +1,33 @@
-c_sigma=0.3  prior a0=10.02 b0=9.48  q*=0.41
-  r1         negations=  5166  good share=28.9%  bad caught=7.4%  wasted on bad=2820  good conv lost=7520 (3.80%)
-  challenger negations=  1317  good share=11.9%  bad caught=3.6%  wasted on bad=2620  good conv lost=1376 (0.70%)
+c_sigma=0.3  prior a0=10.10 b0=10.12  q*=0.36
+  r1         negations=  5593  good share=24.7%  bad caught=8.1% (of those reaching 2x: 43.1%)  wasted on bad=3931  good conv lost=6776 (3.94%)
+  challenger negations=  3525  good share=16.4%  bad caught=6.3% (of those reaching 2x: 33.6%)  wasted on bad=3663  good conv lost=4241 (2.47%)
   P(negated | true CPA c), S=10:
-    c=0.50  R1 sim=0.022 closed form=0.018  challenger=0.002
-    c=0.75  R1 sim=0.072 closed form=0.069  challenger=0.017
-    c=1.00  R1 sim=0.134 closed form=0.135  challenger=0.075
-    c=1.50  R1 sim=0.264 closed form=0.264  challenger=0.302
-    c=2.00  R1 sim=0.371 closed form=0.368  challenger=0.537
-    c=3.00  R1 sim=0.522 closed form=0.513  challenger=0.814
-    c=5.00  R1 sim=0.674 closed form=0.670  challenger=0.967
-c_sigma=0.6  prior a0=2.58 b0=2.13  q*=0.68
-  r1         negations=  6149  good share=15.5%  bad caught=8.5%  wasted on bad=29887  good conv lost=6001 (2.26%)
-  challenger negations=  5579  good share=10.6%  bad caught=8.6%  wasted on bad=26676  good conv lost=3681 (1.39%)
-  P(negated | true CPA c), S=10:
-    c=0.50  R1 sim=0.022 closed form=0.018  challenger=0.012
-    c=0.75  R1 sim=0.072 closed form=0.069  challenger=0.068
-    c=1.00  R1 sim=0.134 closed form=0.135  challenger=0.176
-    c=1.50  R1 sim=0.264 closed form=0.264  challenger=0.454
+    c=0.50  R1 sim=0.022 closed form=0.018  challenger=0.006
+    c=0.75  R1 sim=0.072 closed form=0.069  challenger=0.054
+    c=1.00  R1 sim=0.134 closed form=0.135  challenger=0.154
+    c=1.50  R1 sim=0.264 closed form=0.264  challenger=0.446
     c=2.00  R1 sim=0.371 closed form=0.368  challenger=0.673
-    c=3.00  R1 sim=0.522 closed form=0.513  challenger=0.878
+    c=3.00  R1 sim=0.522 closed form=0.513  challenger=0.880
     c=5.00  R1 sim=0.674 closed form=0.670  challenger=0.984
-c_sigma=0.9  prior a0=1.12 b0=0.73  q*=0.83
-  r1         negations=  7174  good share=9.8%  bad caught=9.4%  wasted on bad=49505  good conv lost=3775 (1.02%)
-  challenger negations=  7335  good share=7.2%  bad caught=10.0%  wasted on bad=45234  good conv lost=3117 (0.84%)
+c_sigma=0.6  prior a0=2.64 b0=2.64  q*=0.74
+  r1         negations=  7732  good share=11.1%  bad caught=8.6% (of those reaching 2x: 48.8%)  wasted on bad=45348  good conv lost=4806 (2.53%)
+  challenger negations=  6706  good share=7.5%  bad caught=8.1% (of those reaching 2x: 45.7%)  wasted on bad=42126  good conv lost=3241 (1.71%)
+  P(negated | true CPA c), S=10:
+    c=0.50  R1 sim=0.022 closed form=0.018  challenger=0.010
+    c=0.75  R1 sim=0.072 closed form=0.069  challenger=0.061
+    c=1.00  R1 sim=0.134 closed form=0.135  challenger=0.157
+    c=1.50  R1 sim=0.264 closed form=0.264  challenger=0.429
+    c=2.00  R1 sim=0.371 closed form=0.368  challenger=0.654
+    c=3.00  R1 sim=0.522 closed form=0.513  challenger=0.862
+    c=5.00  R1 sim=0.674 closed form=0.670  challenger=0.980
+c_sigma=0.9  prior a0=1.10 b0=1.12  q*=0.87
+  r1         negations= 10740  good share=5.3%  bad caught=10.1% (of those reaching 2x: 57.5%)  wasted on bad=81511  good conv lost=3155 (1.53%)
+  challenger negations= 11048  good share=4.1%  bad caught=10.6% (of those reaching 2x: 60.5%)  wasted on bad=74306  good conv lost=2801 (1.36%)
   P(negated | true CPA c), S=10:
     c=0.50  R1 sim=0.022 closed form=0.018  challenger=0.015
-    c=0.75  R1 sim=0.072 closed form=0.069  challenger=0.066
-    c=1.00  R1 sim=0.134 closed form=0.135  challenger=0.166
-    c=1.50  R1 sim=0.264 closed form=0.264  challenger=0.396
-    c=2.00  R1 sim=0.371 closed form=0.368  challenger=0.599
-    c=3.00  R1 sim=0.522 closed form=0.513  challenger=0.816
-    c=5.00  R1 sim=0.674 closed form=0.670  challenger=0.952
+    c=0.75  R1 sim=0.072 closed form=0.069  challenger=0.064
+    c=1.00  R1 sim=0.134 closed form=0.135  challenger=0.161
+    c=1.50  R1 sim=0.264 closed form=0.264  challenger=0.383
+    c=2.00  R1 sim=0.371 closed form=0.368  challenger=0.582
+    c=3.00  R1 sim=0.522 closed form=0.513  challenger=0.806
+    c=5.00  R1 sim=0.674 closed form=0.670  challenger=0.950
