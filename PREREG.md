@@ -96,3 +96,7 @@ Each change below was made after the first scoring run, and says why and which w
 6. **R1 tuning range.** The q search stopped at 0.5; at c_sigma 0.3 no q in that range matched R1's catch rate. The
    search now runs down to 0.01. At c_sigma 0.3 the tuned q did not transfer to the held-out seeds (catch 3.6% vs R1's
    7.4%, about 20 bad queries per seed); that is reported as is.
+7. **Fixes from the independent review** (`docs/review.md`). R1 now rescales true CPAs so the unit is the account's
+   average CPA, as the rule says; before, the unit was the median query CPA, which put R1's trigger at 2.3x to 3x the real
+   average. R2 adds an unguarded twin for the zero-never-fires reading so each guard is compared with its own baseline.
+   R3 stops the unflagged clock at any flag, false alarm included. All numbers in the README come from the rerun.
