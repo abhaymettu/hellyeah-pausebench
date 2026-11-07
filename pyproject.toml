@@ -4,3 +4,8 @@ version = "0.1.0"
 description = "Checks published ad pause, negate and fatigue rules against simulated data with known truth"
 requires-python = ">=3.11"
 dependencies = ["numpy>=1.26", "scipy>=1.11"]
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.11.2",
+]

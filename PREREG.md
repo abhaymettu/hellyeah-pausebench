@@ -1,6 +1,6 @@
 # Preregistration
 
-Written 2026-11-06 20:40 CT, committed before any rule was scored. Changes after this commit are listed at the
+Written and committed 2026-11-06 20:32 CT (commit cf2034f), before any rule was scored. Changes after this commit are listed at the
 bottom with the reason.
 
 ## Question
