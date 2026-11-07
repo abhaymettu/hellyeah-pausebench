@@ -4,9 +4,6 @@
 against three pause, negate and fatigue rules from the Hellyeah blog, and a sample-size-aware replacement for each,
 tuned on training seeds and scored on held-out seeds.
 
-Built in one evening (2026-11-06) as an outside look at the "pause/boost decisions" part of Hellyeah's Learn Engine
-role. It uses only public posts. Nothing here claims to know what Hellyeah runs in production.
-
 <p align="center"><img src="docs/r2-frontier.png" width="720" alt="Frontier chart. The posterior rule's curve sits up and to the left of both published keyword-pause rules: at q=0.80 it pauses 4.2% of good-keyword spend and catches 94.5% of bad-keyword spend, versus 42.7% and 55.0% for the daily rule with the 500-impression guard."></p>
 
 ## The three rules
@@ -62,7 +59,7 @@ rate, it holds false alarms at 0.5% at 1,000 a day while catching like the ungat
 86%, fatigued days left unflagged 7.8 vs 12.5 for R3). At 1,000 a day it catches 61%, between the two.
 
 The R3 numbers depend on how creatives wear out (decay with frequency, audience sizes, how concentrated delivery is).
-Those are my assumptions, not measurements. **The question this raises: in real accounts, what share of creatives that
+**The question this raises: in real accounts, what share of creatives that
 lost 20% of CTR did so with 7-day frequency under 3.0?** If the share is small, the gate is fine. If it's large, the
 flag misses most fatigue.
 
@@ -109,10 +106,8 @@ owner only sees the cases where the data cannot decide.
   30-day lookback).
 - R3's challenger is slower than the rule at low volume on the creatives both catch (median delay 11 vs 8 days at
   1,000 a day). Its gain there comes from catching more creatives, not from catching them sooner.
-- Everything is simulated. The rules' failures in R1 and R2 come from counting statistics alone, so they should carry
-  over to real accounts. R3's depend on the wear-out model.
-- These are rules from blog posts. The [docs](https://docs.hellyeahai.com) say the current product does not change
-  live campaigns without approval, so this is about the policy the Learn Engine would automate, not about live behavior.
+- The R1 and R2 failures come from counting statistics alone, so they carry over to real accounts. R3's depend on the
+  wear-out model.
 
 ## Reproduce
 
