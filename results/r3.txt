@@ -1,0 +1,39 @@
+od_sigma=0.0 od_hat=0.045 z*=2.5 train R3 FA=0.36%
+  arm=single
+      1000/day  crossers=46%  r3: FA=1.1% caught=45% delay=8d unflagged=13.8d | r3_no_freq_gate: FA=6.7% caught=76% delay=8d unflagged=10.3d | challenger: FA=0.7% caught=63% delay=11d unflagged=12.7d
+      3000/day  crossers=45%  r3: FA=0.4% caught=47% delay=7d unflagged=12.7d | r3_no_freq_gate: FA=1.9% caught=82% delay=7d unflagged=8.7d | challenger: FA=0.4% caught=78% delay=7d unflagged=9.1d
+     10000/day  crossers=45%  r3: FA=0.0% caught=47% delay=6d unflagged=12.0d | r3_no_freq_gate: FA=0.2% caught=87% delay=6d unflagged=7.3d | challenger: FA=0.1% caught=90% delay=5d unflagged=6.2d
+     30000/day  crossers=46%  r3: FA=0.0% caught=47% delay=5d unflagged=11.7d | r3_no_freq_gate: FA=0.0% caught=92% delay=6d unflagged=6.4d | challenger: FA=0.0% caught=97% delay=4d unflagged=4.2d
+    100000/day  crossers=45%  r3: FA=0.0% caught=48% delay=5d unflagged=11.5d | r3_no_freq_gate: FA=0.0% caught=95% delay=5d unflagged=5.7d | challenger: FA=0.0% caught=99% delay=4d unflagged=3.5d
+  arm=best_of_4
+      1000/day  crossers=41%  r3: FA=2.2% caught=42% delay=6d unflagged=12.9d | r3_no_freq_gate: FA=13.2% caught=85% delay=6d unflagged=7.4d | challenger: FA=0.8% caught=63% delay=11d unflagged=12.3d
+      3000/day  crossers=41%  r3: FA=0.5% caught=41% delay=6d unflagged=12.6d | r3_no_freq_gate: FA=3.3% caught=86% delay=6d unflagged=7.3d | challenger: FA=0.4% caught=77% delay=7d unflagged=8.9d
+     10000/day  crossers=40%  r3: FA=0.0% caught=41% delay=6d unflagged=12.4d | r3_no_freq_gate: FA=0.1% caught=89% delay=6d unflagged=6.8d | challenger: FA=0.0% caught=91% delay=5d unflagged=5.8d
+     30000/day  crossers=40%  r3: FA=0.0% caught=39% delay=5d unflagged=12.5d | r3_no_freq_gate: FA=0.0% caught=91% delay=6d unflagged=6.2d | challenger: FA=0.0% caught=98% delay=4d unflagged=3.8d
+    100000/day  crossers=40%  r3: FA=0.0% caught=40% delay=5d unflagged=12.2d | r3_no_freq_gate: FA=0.0% caught=95% delay=5d unflagged=5.6d | challenger: FA=0.0% caught=100% delay=3d unflagged=3.3d
+od_sigma=0.1 od_hat=0.108 z*=2.5 train R3 FA=0.61%
+  arm=single
+      1000/day  crossers=46%  r3: FA=1.2% caught=45% delay=8d unflagged=13.9d | r3_no_freq_gate: FA=7.7% caught=76% delay=8d unflagged=10.3d | challenger: FA=0.5% caught=61% delay=11d unflagged=13.2d
+      3000/day  crossers=45%  r3: FA=0.6% caught=46% delay=7d unflagged=13.0d | r3_no_freq_gate: FA=3.2% caught=82% delay=7d unflagged=8.9d | challenger: FA=0.5% caught=75% delay=8d unflagged=10.2d
+     10000/day  crossers=46%  r3: FA=0.1% caught=46% delay=6d unflagged=12.5d | r3_no_freq_gate: FA=0.7% caught=86% delay=7d unflagged=7.9d | challenger: FA=0.3% caught=84% delay=6d unflagged=7.8d
+     30000/day  crossers=45%  r3: FA=0.1% caught=47% delay=6d unflagged=12.1d | r3_no_freq_gate: FA=0.3% caught=88% delay=6d unflagged=7.2d | challenger: FA=0.1% caught=89% delay=5d unflagged=6.6d
+    100000/day  crossers=46%  r3: FA=0.0% caught=47% delay=6d unflagged=12.1d | r3_no_freq_gate: FA=0.1% caught=89% delay=6d unflagged=7.0d | challenger: FA=0.1% caught=91% delay=5d unflagged=6.1d
+  arm=best_of_4
+      1000/day  crossers=41%  r3: FA=2.2% caught=42% delay=6d unflagged=12.8d | r3_no_freq_gate: FA=14.8% caught=84% delay=6d unflagged=7.3d | challenger: FA=0.8% caught=62% delay=10d unflagged=12.4d
+      3000/day  crossers=41%  r3: FA=1.0% caught=41% delay=6d unflagged=12.8d | r3_no_freq_gate: FA=6.0% caught=86% delay=6d unflagged=7.3d | challenger: FA=0.6% caught=75% delay=8d unflagged=9.5d
+     10000/day  crossers=40%  r3: FA=0.3% caught=40% delay=6d unflagged=12.6d | r3_no_freq_gate: FA=1.5% caught=88% delay=6d unflagged=6.9d | challenger: FA=0.4% caught=85% delay=6d unflagged=7.2d
+     30000/day  crossers=40%  r3: FA=0.1% caught=41% delay=6d unflagged=12.4d | r3_no_freq_gate: FA=0.6% caught=89% delay=6d unflagged=6.8d | challenger: FA=0.3% caught=89% delay=5d unflagged=6.2d
+    100000/day  crossers=40%  r3: FA=0.1% caught=40% delay=5d unflagged=12.4d | r3_no_freq_gate: FA=0.3% caught=89% delay=6d unflagged=6.6d | challenger: FA=0.2% caught=91% delay=5d unflagged=5.7d
+od_sigma=0.2 od_hat=0.205 z*=2.5 train R3 FA=1.39%
+  arm=single
+      1000/day  crossers=46%  r3: FA=1.4% caught=44% delay=8d unflagged=14.1d | r3_no_freq_gate: FA=9.2% caught=75% delay=8d unflagged=10.5d | challenger: FA=0.5% caught=55% delay=12d unflagged=14.4d
+      3000/day  crossers=45%  r3: FA=1.0% caught=45% delay=8d unflagged=13.4d | r3_no_freq_gate: FA=5.5% caught=79% delay=8d unflagged=9.5d | challenger: FA=0.4% caught=66% delay=10d unflagged=12.1d
+     10000/day  crossers=46%  r3: FA=0.7% caught=46% delay=7d unflagged=12.9d | r3_no_freq_gate: FA=4.1% caught=83% delay=7d unflagged=8.6d | challenger: FA=0.5% caught=73% delay=9d unflagged=10.6d
+     30000/day  crossers=45%  r3: FA=0.6% caught=47% delay=7d unflagged=12.6d | r3_no_freq_gate: FA=3.6% caught=83% delay=7d unflagged=8.4d | challenger: FA=0.6% caught=74% delay=8d unflagged=10.1d
+    100000/day  crossers=45%  r3: FA=0.5% caught=45% delay=6d unflagged=12.7d | r3_no_freq_gate: FA=3.4% caught=83% delay=7d unflagged=8.2d | challenger: FA=0.4% caught=76% delay=8d unflagged=9.8d
+  arm=best_of_4
+      1000/day  crossers=42%  r3: FA=2.9% caught=42% delay=6d unflagged=12.7d | r3_no_freq_gate: FA=18.5% caught=85% delay=5d unflagged=7.2d | challenger: FA=1.0% caught=59% delay=11d unflagged=13.0d
+      3000/day  crossers=41%  r3: FA=2.0% caught=41% delay=6d unflagged=12.6d | r3_no_freq_gate: FA=12.0% caught=85% delay=6d unflagged=7.2d | challenger: FA=1.1% caught=69% delay=9d unflagged=10.7d
+     10000/day  crossers=41%  r3: FA=1.5% caught=40% delay=6d unflagged=12.8d | r3_no_freq_gate: FA=8.2% caught=86% delay=6d unflagged=7.1d | challenger: FA=1.3% caught=75% delay=8d unflagged=9.4d
+     30000/day  crossers=40%  r3: FA=1.3% caught=40% delay=6d unflagged=12.7d | r3_no_freq_gate: FA=7.4% caught=86% delay=6d unflagged=6.9d | challenger: FA=1.2% caught=78% delay=7d unflagged=8.8d
+    100000/day  crossers=41%  r3: FA=1.1% caught=40% delay=6d unflagged=12.6d | r3_no_freq_gate: FA=7.0% caught=86% delay=6d unflagged=6.9d | challenger: FA=1.2% caught=79% delay=7d unflagged=8.6d

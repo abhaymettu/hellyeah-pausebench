@@ -76,4 +76,23 @@ bad, and how much does that cost? Then: does a rule that accounts for sample siz
 
 ## Changes after this commit
 
-(none yet)
+Each change below was made after the first scoring run, and says why and which way it cuts.
+
+1. **R2 "good" definition (code bug, fixed before any number was reported).** The first R2 run scored good keywords as
+   CPA <= target. This file says CPA <= 0.8 x target. The code now matches this file.
+2. **R2 challenger tuning target.** "Match R2's catch rate" was ambiguous between the daily rule and the post's 30-day
+   lookback advice. The challenger is matched to the 30-day lookback with the 500-impression guard, the stronger of the
+   two, so the comparison is against the post's best version. A descriptive frontier over q (not tuned) is added.
+3. **R3 exposure model and audience range.** The first generator used random exposure and audiences of 3 to 60 days of
+   impressions. Under that model 7-day frequency can never pass about 2.6, so the rule's "frequency above 3.0" gate could
+   never open and R3 caught nothing. That is a flaw in the generator, not a property of the rule. The generator now uses
+   an NBD exposure model (shape 1: delivery concentrated on fewer people, as platforms do) and audiences of 1 to 60 days
+   of impressions. The change can only help R3 fire.
+4. **R3 overdispersion estimate.** Pooled across the cohort's launch days instead of per creative (three days per
+   creative is too few to estimate a variance).
+5. **R3 metric added.** Detection delay is only defined for creatives a policy catches, so it favors a policy that
+   catches only the easy ones. "Fatigued days left unflagged" (flag day minus crossing day, censored at day 30, over all
+   creatives that truly crossed) is added and is the main R3 comparison.
+6. **R1 tuning range.** The q search stopped at 0.5; at c_sigma 0.3 no q in that range matched R1's catch rate. The
+   search now runs down to 0.01. At c_sigma 0.3 the tuned q did not transfer to the held-out seeds (catch 3.6% vs R1's
+   7.4%, about 20 bad queries per seed); that is reported as is.
