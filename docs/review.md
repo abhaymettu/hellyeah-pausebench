@@ -1,6 +1,6 @@
 # pausebench code review (2026-11-06)
 
-Repo: /Users/abhay/code/hellyeah-pausebench at cd99f66. Read-only review; nothing edited. Probes were run with `uv run python -c` against the repo modules; outputs quoted below.
+Repo: hellyeah-pausebench at cd99f66. Read-only review; nothing edited. Probes were run with `uv run python -c` against the repo modules; outputs quoted below.
 
 ## Short answer
 
